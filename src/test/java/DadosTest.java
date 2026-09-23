@@ -22,5 +22,12 @@ class DadosTest {
         Dados.getInstance().setNomeCoop("Sicredi Vale do Jaguari/Zona da Mata");
         assertEquals("Sicredi Vale do Jaguari/Zona da Mata", Dados.getInstance().getNomeCoop());
     }
+    @Test
+    public void deveFazerLogout() {
+        Dados.getInstance().encerrarSessao();
+        assertNull(null, Dados.getInstance().getCodCoop());
+        assertNull(null, Dados.getInstance().getNumPA());
+        assertNull(null, Dados.getInstance().getNomeCoop());
+    }
 
 }

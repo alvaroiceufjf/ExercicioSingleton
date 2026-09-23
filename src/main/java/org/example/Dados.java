@@ -36,6 +36,11 @@ public class Dados {
         this.nomeCoop = nomeCoop;
     }
 
+    public void encerrarSessao() {
+        this.codCoop = null;
+        this.numPA = null;
+        this.nomeCoop = null;
+    }
 
 
 
