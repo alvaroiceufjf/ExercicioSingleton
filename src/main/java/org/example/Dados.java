@@ -2,28 +2,41 @@ package org.example;
 
 public class Dados {
 
-    private Parametros() {};
-    private static Parametros instance = new Parametros();
-    public static Parametros getInstance() {
+    private Dados() {};
+    private static Dados instance = new Dados();
+    public static Dados getInstance() {
         return instance;
     }
 
-    private String nomeEscola;
-    private String usuarioLogado;
+    private String codCoop;
+    private String numPA;
+    private String nomeCoop;
 
-    public String getNomeEscola() {
-        return nomeEscola;
+    public String getCodCoop() {
+        return codCoop;
     }
 
-    public void setNomeEscola(String nomeEscola) {
-        this.nomeEscola = nomeEscola;
+    public void setCodCoop(String codCoop) {
+        this.codCoop = codCoop;
     }
 
-    public String getUsuarioLogado() {
-        return usuarioLogado;
+    public String getNumPA() {
+        return numPA;
     }
 
-    public void setUsuarioLogado(String usuarioLogado) {
-        this.usuarioLogado = usuarioLogado;
+    public void setNumPA(String numPA) {
+        this.numPA = numPA;
     }
+
+    public String getnomeCoop() {
+        return nomeCoop;
+    }
+
+    public void setnomeCoop(String nomeCoop) {
+        this.nomeCoop = nomeCoop;
+    }
+
+
+
+
 }
