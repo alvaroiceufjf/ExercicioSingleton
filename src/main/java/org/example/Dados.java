@@ -28,11 +28,11 @@ public class Dados {
         this.numPA = numPA;
     }
 
-    public String getnomeCoop() {
+    public String getNomeCoop() {
         return nomeCoop;
     }
 
-    public void setnomeCoop(String nomeCoop) {
+    public void setNomeCoop(String nomeCoop) {
         this.nomeCoop = nomeCoop;
     }
 
